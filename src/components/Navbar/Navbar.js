@@ -12,11 +12,11 @@ const Navbar = () => {
         <div>
             <ul className = "flex items-center gap-10">
                 {
-                    navLinksdata.map(({_id,title,link})=>(
+                    navLinksdata.map(({id,title,link})=>(
                             <li
                                 className='text-base font-normal text-gray-400 tracking-wide cursor-pointer 
                                 hover:text-designColor duration-300 '
-                             key={_id}>
+                             key={id}>
                                 <Link
                                 activeClass='active'
                                 to={link}
